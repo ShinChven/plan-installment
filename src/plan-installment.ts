@@ -1,6 +1,8 @@
 const planInstallment = (amountPerInstallment: number, installments: number, annualizedRateOfReturn: number) => {
 
-
+    /**
+     * 收集每期金额用于投资的回报
+     */
     const earningsOfEachInstallment = new Array<number>();
 
     // 累加每期可通过理财获得的回报
@@ -21,7 +23,6 @@ const planInstallment = (amountPerInstallment: number, installments: number, ann
      * 总支付
      */
     const totalPayment = amountPerInstallment * installments;
-
 
     /**
      * 通过理财可获得的总回报
