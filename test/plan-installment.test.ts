@@ -7,7 +7,7 @@ const formatter = new Intl.NumberFormat('zh-CN', {
 
 const money = (amount: number) => formatter.format(amount);
 
-const result = planInstallment(1354, 24, 0.04, 3)
+const result = planInstallment(1354.125, 24, 0.10, 0)
 
 console.log(result);
 console.log()
